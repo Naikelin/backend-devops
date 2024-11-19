@@ -16,7 +16,7 @@ mainRouter.get("/api-key", (_req, res) => {
 
 mainRouter.get("/operar", (req, res) => {
     const { operacion, num1, num2 } = req.query as { operacion: string, num1: string, num2: string };
-    let resultado = operar(operacion, +num1, +num2);
+    let resultado = operar(operacion, +num1, +num2 || NaN);
     return res.send(`El resultado de la operacion es: ${resultado}`);
 });
 
