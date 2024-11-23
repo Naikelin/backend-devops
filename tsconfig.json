@@ -66,5 +66,5 @@
 	],
 	"include": [
 		"src/**/*.ts"
-, "__test__/lab2-route.test.ts"	]
+, "__test__/lab2-route.test.ts", "__tests__/app/palabras.test.ts", "__tests__/routes/main-routes.spec.ts"	]
 }
